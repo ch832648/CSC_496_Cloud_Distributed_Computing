@@ -4,7 +4,7 @@ sudo yum -y group install "Development Tools"
 sudo wget https://download.open-mpi.org/release/open-mpi/v3.1/openmpi-3.1.2.tar.gz
 sudo tar xzf openmpi-3.1.2.tar.gz
 cd openmpi-3.1.2
-sudo ./configure --prefix=/opt/openmpi/3.1.2
+sudo ./configure --prefix=/opt/openmpi/3.1.2 --enable-mpirun-prefix-by-default
 sudo make
 sudo make all install
 
